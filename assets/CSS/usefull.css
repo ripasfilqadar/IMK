@@ -1,0 +1,39 @@
+/*--------------------------------------------------------
+---------------- USEFUL.CSS by Yusei ---------------------
+---------------------------------------------------------*/
+
+/* CLEARFIX */
+.clearfix:after {
+	content 					: ".";
+	display 					: block;
+	clear 						: both;
+	visibility					: hidden;
+	line-height					: 0;
+	height 						: 0;
+}
+ 
+.clearfix {
+	display						: inline-block;
+}
+
+/* TEXT ALIGN */
+.center.text.aligned {
+	text-align					: center;
+}
+
+.left.text.aligned {
+	text-align					: left;
+}
+
+.right.text.aligned {
+	text-align					: right;
+}
+
+.justify.text.aligned {
+	text-align					: justify;
+}
+
+/* STANDARD GOOD FONT :3 */
+body {
+	font-family					: 'TW Cen MT', 'Segoe UI', Verdana, Arial; 
+}

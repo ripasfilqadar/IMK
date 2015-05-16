@@ -1,0 +1,173 @@
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Catatuang</title>
+		
+		<!-- Load library -->
+
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/usefull.css" />
+		<link rel="stylesheet" type="text/css" href="css/icon.css" />
+		<link rel="stylesheet" type="text/css" href="css/form.css" />
+		<link rel="stylesheet" type="text/css" href="css/semantic.css" />
+		<link rel="stylesheet" type="text/css" href="css/semantic.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="javascript/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery.easing.js"></script>
+		
+		<!-- Load CSS & JS-->
+		
+		<script type="text/javascript" src="javascript/script.js"></script>
+		
+		<!-- Meta Element -->
+		<meta name="description" content="Catatuang" />
+		<meta name="keywords" content="Pencatat keuangan anda!" />
+		<meta name="author" content="Thirafi Dide" />
+		<meta charset="UTF-8" />
+	</head>
+	
+	<body>
+		<!-- Wrap semua elemen agar berada di tengah -->
+		<div class="body wrapper">
+			<header class="main header">
+				CATAT UANG
+				<p class="sub header">Pencatat Keuangan Anda!</p>
+			</header>
+
+			<!-- Isi Apps -->
+			<section class="main body">
+
+				<!-- laporan -->
+				<section class="laporan">
+					<div class="item clearfix">
+						<div class="red desc">
+							<p class="title">Gaji Bulanan</p>
+							<p class="type">Pemasukan</p>
+							<p class="date">18/11/2013</p>
+						</div>
+						<div class="amount">
+							Rp. 2,000,000 ,-
+						</div>
+					</div>
+				</section>
+
+				<!-- rekap -->
+				<section class="summary">
+					<header>
+						Laporan Keuangan Anda
+					</header>
+
+					<table>
+						<tr>
+							<td><strong>Pengeluaran</strong></td>
+							<td class="out"></td>
+						</tr>
+						<tr>
+							<td>Pengeluaran Transportasi</td>
+							<td class="out-t"></td>
+						</tr>
+						<tr>
+							<td>Pengeluaran Konsumsi</td>
+							<td class="out-k"></td>
+						</tr>
+						<tr>
+							<td>Pengeluaran Hiburan</td>
+							<td class="out-h"></td>
+						</tr>
+						<tr>
+							<td>Pengeluaran Lain-Lain</td>
+							<td class="out-l"></td>
+						</tr>
+
+						<tr>
+							<td><strong>Pemasukan</strong></td>
+							<td class="in"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td><strong class="very">Total</strong></td>
+							<td class="total"></td>
+						</tr>
+					</table>
+				</section>
+
+				<!-- text rekap -->
+				<section class="summary-text">
+					<form class="ui form">
+						<textarea id="summary-text">sad</textarea>
+					</form>					
+				</section>
+			</section>
+		</div>
+
+		<!-- menu bawah -->
+		<section class="main nav">
+			<nav>
+				<a href="#" id="pemasukan" class="clearfix"><i class="add sign inverted big icon"></i></a>
+				<a href="#" id="pengeluaran" class="clearfix"><i class="minus sign inverted big icon"></i></a>
+				<a href="#" id="info" class="clearfix"><i class="info inverted big icon"></i></a>
+				<a href="#" id="sumtext" class="clearfix"><i class="list inverted big icon"></i></a>
+				<a href="#" id="clearstorage" class="clearfix"><i class="trash inverted big icon"></i></a>
+			</nav>
+		</section>
+
+		<!-- input masukan/keluaran -->
+		<section class="input">
+			<div class="wrapper">
+				<header class="input header">
+					Input Pemasukan / Pengeluaran
+				</header>
+
+				<form action="#" method="post" class="ui form">
+					<input type="hidden" name="tipe" value="pengeluaran" />
+
+					<section class="left">
+					<div class="field">
+						<label>Penjelasan Singkat</label>
+						<input type="text" name="penjelasan" placeholder="penjelasan singkat" />
+					</div>
+
+					<div class="field">
+						<label>Jumlah</label>
+						<input type="text" name="jumlah" placeholder="contoh : 10000" />
+					</div>
+
+					<div class="field" id="category">
+						<label>Kategori</label>
+						<label class="title label">Lain-Lain</label>
+
+						<div class="cat button" id="Transport"><i class="truck large icon"></i></div>
+						<div class="cat button" id="Konsumsi"><i class="food large icon"></i></div>
+						<div class="cat button" id="Hiburan"><i class="music large icon"></i></div>
+						<div class="cat button active" id="Lain-Lain"><i class="tags large icon"></i></div>
+
+						<input type="hidden" name="kategori" value="lainlain" />
+					</div>
+
+					<div class="field">
+						<label>Tanggal</label>
+						<input type="date" name="tanggal" />
+					</div>
+					</section>
+
+					<section class="right">
+					<div class="field">
+						<label>Detail</label>
+						<textarea name="detail" placeholder="Detail"></textarea>
+					</div>
+
+						<input type="submit" value="Submit" class="submit button" id="submit-input" />
+						<input type="reset" value="Cancel" class="cancel button" id="cancel-input" />
+					</section>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>
